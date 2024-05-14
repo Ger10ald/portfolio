@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <!--desktop navigation-->
+    <nav id="desktopNav"> 
+        <div class="logo">Gerald Dukuly</div>
+        <div>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Hamburger Style Nav-->
+    <nav id="hamburgerNav"> 
+        <div class="logo">Gerald Dukuly</div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menuLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>  
+    </nav>
+    <section id="profile">        
+        <div class="section__pic-container">
+            <img src="/assets/IMG_6689.jpg" alt="Gerald Dukuly profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, my name is</p>
+            <p class="section__text__p1">Gerald Dukuly</p>
+            <br/>
+            
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume Revised.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>  
+            </div>
+
+            <div id="socials-container">
+                <a href="http://linkedin.com/in/gerald-dukuly-5a11942a6" target="_blank">
+                    <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon">
+                </a>
+                <a href="http://github.com/Ger10ald/Ger10ald.git" target="_blank">
+                    <img src="./assets/github.png" alt="My Github Profile" class="icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know Me</p>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <P>Frontend Development<br />  Backend Development</P>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <P>Mount Saint Mary's University <br />  B.Sc. Bachelors Degree May 2024</P>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, I'm Gerald Dukuly and I am on a journey of exploration and growth
+                        in the dynamic world of programming. I am very passionate about turning ideas 
+                        into reality and expanding my knowledge of the world. One of my core beliefs is that 
+                        learning is never ending. The constantly changing nature of the technology field gives 
+                        me the opportunity to continue to learn and develop my skills to make me a more valuable person.      
+                        My enthousiasm for programming goes beyond personal projects; The thought that I could have a meaningful
+                        impact on my community through my skills gives me the motivation to get out of bed every morning.
+                        I forsee a future where technology serves as a catalyst for positive change, and I am committed to contributing 
+                        to that vision.
+                    </p>
+                    <br/>
+                    <p>
+                        Additionally, I am also content to say that I am deeply involved in campus life
+                        and my community. Serving as a Student Government Association Representative has given me a platform to
+                        express the concerns of my fellow students and contribute to real changes on campus.
+                        As a French and Computer Science peer tutor, I am able to help others grasp complex concepts 
+                        and overcome academic challenges. Additionally, my position as President of the French club
+                        showcases my love for culture and community building. 
+                        While programming is a significant part of my life, I believe in a well-rounded approach
+                        to personal development. Outside the classroom, you'll find me immersed in the world 
+                        of gaming, both as a player and a developer. I cherish the social aspect of gaming and
+                        enjoy connecting with peers who share similar interests. It's in these moments of
+                        collaboration and shared experiences that I find inspiration and motivation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Experience</p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technologies/Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Projects</p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/comming_soon_flyer.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <a href="http://github.com" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a href="http://github.com" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/comming_soon_flyer.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <a href="http://github.com" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a href="http://github.com" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Contact Me</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p>
+                    <a href="mailto:examplemail@gmail.com">gerald101201@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon"/>
+                <p>
+                    <a href="http://linkedin.com/in/gerald-dukuly-5a11942a6">Linkedin</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Gerald Dukuly. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
